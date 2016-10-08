@@ -22,7 +22,7 @@ my js tools
 
 ####functions && useage:
  
- >createCountDown:
+ ####createCountDown:
  
  > description : get params object,and return CountDown,will create CountDown instance and return it,set id to CountDown,push it in cache array.
  > params: 
@@ -45,7 +45,7 @@ my js tools
  })
  `
  
- >clearCd:
+ ####clearCd:
  >description: clear CountDown and stop setTimeout
  >params：id
  
@@ -55,7 +55,7 @@ my js tools
  `
  
  
- >clearAllCd:
+####clearAllCd:
  >
  >description:clear all CountDown instance and stop all setTimeout in cache.
  >no params
@@ -67,7 +67,7 @@ my js tools
 
 ###2.DateFormat
 
->long2DateStr:
+####long2DateStr:
 >description:convert long to DateStr
 >params:long,format:string format:default:yyyy-MM-dd,others:yyyy-MM-dd hh:mm:ss,yyyy/MM/dd ,yyyy/MM/dd hh:mm:ss
 >return : string 
@@ -77,7 +77,7 @@ const now = long2DateStr(new Date().getTime(),'yyyy/MM/dd hh:mm:ss')
 now = 2016/10/08 23:50:49
 ```
 
->getNowStr:
+####getNowStr:
 >description:get now with format yyyy-MM-dd
 >no params
 >return :string
@@ -86,7 +86,7 @@ now = 2016/10/08 23:50:49
 const now = getNowStr()
 ```
 
->dateStrFormat:
+####dateStrFormat:
 >description:format yyyyMMdd to yyyy-MM-dd
 >params:string
 >return :string
@@ -97,7 +97,8 @@ now = '1998-02-12'
 ```
 
 ###3.Valid:
->isMobile:
+
+####isMobile:
 >description:valid chinese mobile number
 >params: string
 >return: bool
@@ -106,3 +107,5 @@ now = '1998-02-12'
 const flag = ValidUtil.isMobile('12345678634')
 flag =false
 ```
+
+####
