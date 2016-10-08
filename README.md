@@ -56,7 +56,7 @@ my js tools
  
  
  >clearAllCd:
- 
+ >
  >description:clear all CountDown instance and stop all setTimeout in cache.
  >no params
  
@@ -64,3 +64,45 @@ my js tools
  `
  clearAllCd()
  `
+
+###2.DateFormat
+
+>long2DateStr:
+>description:convert long to DateStr
+>params:long,format:string format:default:yyyy-MM-dd,others:yyyy-MM-dd hh:mm:ss,yyyy/MM/dd ,yyyy/MM/dd hh:mm:ss
+>return : string 
+>usage:
+```
+const now = long2DateStr(new Date().getTime(),'yyyy/MM/dd hh:mm:ss')
+now = 2016/10/08 23:50:49
+```
+
+>getNowStr:
+>description:get now with format yyyy-MM-dd
+>no params
+>return :string
+>usage:
+```
+const now = getNowStr()
+```
+
+>dateStrFormat:
+>description:format yyyyMMdd to yyyy-MM-dd
+>params:string
+>return :string
+>usage:
+```
+const now = dateStrFormat('19980212')
+now = '1998-02-12'
+```
+
+###3.Valid:
+>isMobile:
+>description:valid chinese mobile number
+>params: string
+>return: bool
+>usage:
+```
+const flag = ValidUtil.isMobile('12345678634')
+flag =false
+```
