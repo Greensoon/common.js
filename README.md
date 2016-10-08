@@ -18,5 +18,7 @@ my js tools
  ```
 
 ***
-###1.CountDown
+###1.CountDown:
+
+####functions && useage:
  
