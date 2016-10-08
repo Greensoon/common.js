@@ -22,3 +22,45 @@ my js tools
 
 ####functions && useage:
  
+ >createCountDown:
+ 
+ > description : get params object,and return CountDown,will create CountDown instance and return it,set id to CountDown,push it in cache array.
+ > params: 
+ type : object
+ return CountDown
+ ```
+ {
+  per : func, //每秒钟执行的函数
+  callback : func, //计时结束后的callback
+  delay : 0, //计时时间
+ }
+ ```
+ 
+ usage:
+ `
+ const cd = createCountDown({
+  per : function(){},
+  callback : function(){},
+  delay : 60,
+ })
+ `
+ 
+ >clearCd:
+ description: clear CountDown and stop setTimeout
+ params：id
+ 
+ usage:
+ `
+ clearCd(cd.id)
+ `
+ 
+ 
+ >clearAllCd:
+ 
+ >description:clear all CountDown instance and stop all setTimeout in cache.
+ no params
+ 
+ usage:
+ `
+ clearAllCd()
+ `
