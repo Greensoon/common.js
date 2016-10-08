@@ -46,8 +46,8 @@ my js tools
  `
  
  >clearCd:
- description: clear CountDown and stop setTimeout
- params：id
+ >description: clear CountDown and stop setTimeout
+ >params：id
  
  usage:
  `
@@ -58,7 +58,7 @@ my js tools
  >clearAllCd:
  
  >description:clear all CountDown instance and stop all setTimeout in cache.
- no params
+ >no params
  
  usage:
  `
