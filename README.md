@@ -120,4 +120,149 @@ const flag = ValidUtil.isMobile('12345678634')
 flag =false
 ```
 
-####
+####isEmail:
+```
+description:valid email
+params: string
+return: bool
+```
+usage:
+```
+const flag = ValidUtil.isEmail('xiaoyaozhen3930@163.com')
+flag =true
+```
+
+####isIdcard:
+```
+description:valid idCard
+params: string
+return: bool
+```
+usage:
+```
+const flag = ValidUtil.isEmail('412722********3**6')
+flag =true
+```
+```
+isInt4 
+isInt6
+isInt
+isNum
+isString
+isNickname
+isRealname
+isIdcard
+isPassport
+isDate: yyyy-MM-dd
+
+all like isMobile usage
+```
+
+###getParamsFromObj:
+
+```
+description:copy params from obj by fields
+params: fields:array,obj:object
+return: object
+```
+usage:
+```
+const ret = getParamsFromObj(['name','id'],{name:'zs',id:1,age:20})
+console.log(ret) //ret={name:'zs',id:1}
+```
+
+####getPFOHasEscape:
+
+```
+description:copy params from obj by fields,with escape fields
+params: fields:array,obj:object,escapeFields:array
+return: object
+```
+usage:
+```
+const ret = getParamsFromObj(['name','id'],{name:'zs',id:1,age:20},['id'])
+console.log(ret) //ret={name:'zs'}
+```
+
+
+###log:
+
+```
+description:log func with color,string will render 2em and green color,object will write in console terminal start '%c>>print ~_~ start<<' and end orange '%c>>print ~_~ end<<' normal font size.
+params: ...
+no returns
+```
+usage:
+```
+log('askdh',['asd'],{name:'asd'},1,...)
+```
+
+
+###getQueryParams:
+```
+description:get params from url query,and without '?'
+params:query string
+return :object
+```
+usage:
+```
+url = http://localhost/user?id=1
+obj = getQueryParams(url.slice(1))
+obj = {id:1}
+```
+
+###generateUUID:
+```
+description:get random uuid 32bits
+no params 
+return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'
+```
+
+usage:
+```
+var uuid = generateUUID()
+```
+
+###scrollTo:
+```
+description: scrollTo your scrollTop 50/ms ,total 10ms
+params: st:num ,default 0
+no return
+```
+
+usage:
+```
+scrollTo()
+```
+
+###About Array:
+
+####arrayContains:
+```
+description:check array contains element or not
+params: arr:array,element:string or number
+return:bool
+```
+usage:
+```
+var flag = arrayContains([1,2,3],2)
+flag = true
+```
+
+####arrayIndexOf:
+```
+description:get element position in arr,if not contained in arr ,return -1
+params:arr:array,element:string or number
+return: number
+```
+usage:
+```
+var idx = arrayIndexOf([1,2,3],2)
+idx = 1
+
+idx = arrayIndexOf([1,2,3],0)
+idx = -1
+```
+
+~~~
+#####will continue if have good funcs
