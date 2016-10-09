@@ -23,11 +23,12 @@ my js tools
 ####functions && useage:
  
 ####createCountDown:
- 
- > description : get params object,and return CountDown,will create CountDown instance and return it,set id to CountDown,push it in cache array.
- > params: 
- type : object
- return CountDown
+
+```
+ description : get params object,and return CountDown,will create CountDown instance and return it,set id to CountDown,push it in cache array.
+ params: object
+ return: CountDown
+ ```
  ```
  {
   per : func, //每秒钟执行的函数
@@ -46,8 +47,10 @@ my js tools
  `
  
 ####clearCd:
- >description: clear CountDown and stop setTimeout
- >params：id
+ ```
+ description: clear CountDown and stop setTimeout
+ params：id
+ ```
  
  usage:
  `
@@ -56,9 +59,10 @@ my js tools
  
  
 ####clearAllCd:
- >
- >description:clear all CountDown instance and stop all setTimeout in cache.
- >no params
+ ```
+ description:clear all CountDown instance and stop all setTimeout in cache.
+ no params
+ ```
  
  usage:
  `
@@ -68,29 +72,35 @@ my js tools
 ###2.DateFormat
 
 ####long2DateStr:
->description:convert long to DateStr
->params:long,format:string format:default:yyyy-MM-dd,others:yyyy-MM-dd hh:mm:ss,yyyy/MM/dd ,yyyy/MM/dd hh:mm:ss
->return : string 
->usage:
+```
+description:convert long to DateStr
+params:long,format:string format:default:yyyy-MM-dd,others:yyyy-MM-dd hh:mm:ss,yyyy/MM/dd ,yyyy/MM/dd hh:mm:ss
+return : string 
+```
+usage:
 ```
 const now = long2DateStr(new Date().getTime(),'yyyy/MM/dd hh:mm:ss')
 now = 2016/10/08 23:50:49
 ```
 
 ####getNowStr:
->description:get now with format yyyy-MM-dd
->no params
->return :string
->usage:
+```
+description:get now with format yyyy-MM-dd
+no params
+return :string
+```
+usage:
 ```
 const now = getNowStr()
 ```
 
 ####dateStrFormat:
->description:format yyyyMMdd to yyyy-MM-dd
->params:string
->return :string
->usage:
+```
+description:format yyyyMMdd to yyyy-MM-dd
+params:string
+return :string
+```
+usage:
 ```
 const now = dateStrFormat('19980212')
 now = '1998-02-12'
@@ -99,10 +109,12 @@ now = '1998-02-12'
 ###3.Valid:
 
 ####isMobile:
->description:valid chinese mobile number
->params: string
->return: bool
->usage:
+```
+description:valid chinese mobile number
+params: string
+return: bool
+```
+usage:
 ```
 const flag = ValidUtil.isMobile('12345678634')
 flag =false
