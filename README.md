@@ -264,5 +264,4 @@ idx = arrayIndexOf([1,2,3],0)
 idx = -1
 ```
 
-~~~
 #####will continue if have good funcs
