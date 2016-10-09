@@ -22,7 +22,7 @@ my js tools
 
 ####functions && useage:
  
- ####createCountDown:
+####createCountDown:
  
  > description : get params object,and return CountDown,will create CountDown instance and return it,set id to CountDown,push it in cache array.
  > params: 
@@ -45,7 +45,7 @@ my js tools
  })
  `
  
- ####clearCd:
+####clearCd:
  >description: clear CountDown and stop setTimeout
  >params：id
  
